@@ -28,6 +28,7 @@
 		FA380C211567F4C1006A64C8 /* ANAutoLaunch.m in Sources */ = {isa = PBXBuildFile; fileRef = FA380C201567F4C1006A64C8 /* ANAutoLaunch.m */; };
 		FA380C251567FB2F006A64C8 /* ANTerminal.m in Sources */ = {isa = PBXBuildFile; fileRef = FA380C241567FB2F006A64C8 /* ANTerminal.m */; };
 		FA380C281567FD95006A64C8 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA380C271567FD95006A64C8 /* ScriptingBridge.framework */; };
+		FA380C34156807AD006A64C8 /* ANDeleteTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA380C33156807AD006A64C8 /* ANDeleteTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,8 @@
 		FA380C241567FB2F006A64C8 /* ANTerminal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANTerminal.m; sourceTree = "<group>"; };
 		FA380C261567FB3A006A64C8 /* Terminal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Terminal.h; sourceTree = "<group>"; };
 		FA380C271567FD95006A64C8 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		FA380C32156807AD006A64C8 /* ANDeleteTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANDeleteTableView.h; sourceTree = "<group>"; };
+		FA380C33156807AD006A64C8 /* ANDeleteTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANDeleteTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,8 @@
 				FA380C071567EFA7006A64C8 /* ANLaunchListWindow.m */,
 				FA380C1F1567F4C1006A64C8 /* ANAutoLaunch.h */,
 				FA380C201567F4C1006A64C8 /* ANAutoLaunch.m */,
+				FA380C32156807AD006A64C8 /* ANDeleteTableView.h */,
+				FA380C33156807AD006A64C8 /* ANDeleteTableView.m */,
 				FA380BE11567ED10006A64C8 /* MainMenu.xib */,
 				FA380BD31567ED10006A64C8 /* Supporting Files */,
 			);
@@ -291,6 +296,7 @@
 				FA380C101567F02B006A64C8 /* ANExecutableManager.m in Sources */,
 				FA380C141567F06F006A64C8 /* ANExecutable.m in Sources */,
 				FA380C211567F4C1006A64C8 /* ANAutoLaunch.m in Sources */,
+				FA380C34156807AD006A64C8 /* ANDeleteTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

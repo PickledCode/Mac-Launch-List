@@ -9,11 +9,15 @@
 #import <Cocoa/Cocoa.h>
 #import "ANExecutableManager.h"
 #import "ANAutoLaunch.h"
+#import "ANDeleteTableView.h"
 
 @interface ANLaunchListWindow : NSWindow <NSTableViewDataSource, NSTableViewDelegate> {
-    NSTableView * executableTableView;
+    ANDeleteTableView * executableTableView;
+    NSScrollView * tableScrollView;
     NSButton * autoLaunchCheckBox;
     NSButton * launchButton;
+    NSButton * addButton;
+    NSButton * removeButton;
     
     ANAutoLaunch * autoLaunch;
     ANExecutableManager * executableManager;
@@ -21,5 +25,7 @@
 
 - (void)autoLaunchCheckBoxChanged:(id)sender;
 - (void)launchButtonPressed:(id)sender;
+- (void)addButtonPressed:(id)sender;
+- (void)removeButtonPressed:(id)sender;
 
 @end

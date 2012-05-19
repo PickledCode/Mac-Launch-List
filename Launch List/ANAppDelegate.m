@@ -11,7 +11,7 @@
 @implementation ANAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    NSSize windSize = NSMakeSize(500, 400);
+    NSSize windSize = NSMakeSize(420, 250);
     NSSize screenSize = [[NSScreen mainScreen] frame].size;
     NSRect frame = NSMakeRect((screenSize.width - windSize.width) / 2,
                              (screenSize.height - windSize.height) / 2,
@@ -22,6 +22,8 @@
                                                      backing:NSBackingStoreBuffered
                                                        defer:NO
                                                       screen:[NSScreen mainScreen]];
+    [window setMinSize:NSMakeSize(420, 250)];
+    [window setTitle:@"Launch List Configuration"];
     [window makeKeyAndOrderFront:self];
 }
 
