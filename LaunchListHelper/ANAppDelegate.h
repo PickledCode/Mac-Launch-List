@@ -7,9 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ANExecutableManager.h"
+#import "ANTerminal.h"
 
 @interface ANAppDelegate : NSObject <NSApplicationDelegate>
-
-@property (assign) IBOutlet NSWindow *window;
 
 @end

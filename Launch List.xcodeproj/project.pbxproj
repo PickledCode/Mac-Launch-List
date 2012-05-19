@@ -20,6 +20,14 @@
 		FA380BFE1567ED37006A64C8 /* ANAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA380BFD1567ED37006A64C8 /* ANAppDelegate.m */; };
 		FA380C011567ED37006A64C8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA380BFF1567ED37006A64C8 /* MainMenu.xib */; };
 		FA380C051567ED8D006A64C8 /* LaunchListHelper.app in Resources */ = {isa = PBXBuildFile; fileRef = FA380BED1567ED37006A64C8 /* LaunchListHelper.app */; };
+		FA380C081567EFA7006A64C8 /* ANLaunchListWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FA380C071567EFA7006A64C8 /* ANLaunchListWindow.m */; };
+		FA380C101567F02B006A64C8 /* ANExecutableManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA380C0F1567F02B006A64C8 /* ANExecutableManager.m */; };
+		FA380C111567F02B006A64C8 /* ANExecutableManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA380C0F1567F02B006A64C8 /* ANExecutableManager.m */; };
+		FA380C141567F06F006A64C8 /* ANExecutable.m in Sources */ = {isa = PBXBuildFile; fileRef = FA380C131567F06F006A64C8 /* ANExecutable.m */; };
+		FA380C151567F06F006A64C8 /* ANExecutable.m in Sources */ = {isa = PBXBuildFile; fileRef = FA380C131567F06F006A64C8 /* ANExecutable.m */; };
+		FA380C211567F4C1006A64C8 /* ANAutoLaunch.m in Sources */ = {isa = PBXBuildFile; fileRef = FA380C201567F4C1006A64C8 /* ANAutoLaunch.m */; };
+		FA380C251567FB2F006A64C8 /* ANTerminal.m in Sources */ = {isa = PBXBuildFile; fileRef = FA380C241567FB2F006A64C8 /* ANTerminal.m */; };
+		FA380C281567FD95006A64C8 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA380C271567FD95006A64C8 /* ScriptingBridge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +53,18 @@
 		FA380BFC1567ED37006A64C8 /* ANAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANAppDelegate.h; sourceTree = "<group>"; };
 		FA380BFD1567ED37006A64C8 /* ANAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANAppDelegate.m; sourceTree = "<group>"; };
 		FA380C001567ED37006A64C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FA380C061567EFA7006A64C8 /* ANLaunchListWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANLaunchListWindow.h; sourceTree = "<group>"; };
+		FA380C071567EFA7006A64C8 /* ANLaunchListWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANLaunchListWindow.m; sourceTree = "<group>"; };
+		FA380C0E1567F02B006A64C8 /* ANExecutableManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANExecutableManager.h; sourceTree = "<group>"; };
+		FA380C0F1567F02B006A64C8 /* ANExecutableManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANExecutableManager.m; sourceTree = "<group>"; };
+		FA380C121567F06F006A64C8 /* ANExecutable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANExecutable.h; sourceTree = "<group>"; };
+		FA380C131567F06F006A64C8 /* ANExecutable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANExecutable.m; sourceTree = "<group>"; };
+		FA380C1F1567F4C1006A64C8 /* ANAutoLaunch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANAutoLaunch.h; sourceTree = "<group>"; };
+		FA380C201567F4C1006A64C8 /* ANAutoLaunch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANAutoLaunch.m; sourceTree = "<group>"; };
+		FA380C231567FB2F006A64C8 /* ANTerminal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANTerminal.h; sourceTree = "<group>"; };
+		FA380C241567FB2F006A64C8 /* ANTerminal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANTerminal.m; sourceTree = "<group>"; };
+		FA380C261567FB3A006A64C8 /* Terminal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Terminal.h; sourceTree = "<group>"; };
+		FA380C271567FD95006A64C8 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA380C281567FD95006A64C8 /* ScriptingBridge.framework in Frameworks */,
 				FA380BEF1567ED37006A64C8 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,6 +91,7 @@
 		FA380BBD1567ED0F006A64C8 = {
 			isa = PBXGroup;
 			children = (
+				FA380C0D1567F013006A64C8 /* Shared */,
 				FA380BD21567ED10006A64C8 /* Launch List */,
 				FA380BF01567ED37006A64C8 /* LaunchListHelper */,
 				FA380BCB1567ED10006A64C8 /* Frameworks */,
@@ -89,6 +111,7 @@
 		FA380BCB1567ED10006A64C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA380C271567FD95006A64C8 /* ScriptingBridge.framework */,
 				FA380BCC1567ED10006A64C8 /* Cocoa.framework */,
 				FA380BCE1567ED10006A64C8 /* Other Frameworks */,
 			);
@@ -110,6 +133,10 @@
 			children = (
 				FA380BDE1567ED10006A64C8 /* ANAppDelegate.h */,
 				FA380BDF1567ED10006A64C8 /* ANAppDelegate.m */,
+				FA380C061567EFA7006A64C8 /* ANLaunchListWindow.h */,
+				FA380C071567EFA7006A64C8 /* ANLaunchListWindow.m */,
+				FA380C1F1567F4C1006A64C8 /* ANAutoLaunch.h */,
+				FA380C201567F4C1006A64C8 /* ANAutoLaunch.m */,
 				FA380BE11567ED10006A64C8 /* MainMenu.xib */,
 				FA380BD31567ED10006A64C8 /* Supporting Files */,
 			);
@@ -133,6 +160,9 @@
 			children = (
 				FA380BFC1567ED37006A64C8 /* ANAppDelegate.h */,
 				FA380BFD1567ED37006A64C8 /* ANAppDelegate.m */,
+				FA380C261567FB3A006A64C8 /* Terminal.h */,
+				FA380C231567FB2F006A64C8 /* ANTerminal.h */,
+				FA380C241567FB2F006A64C8 /* ANTerminal.m */,
 				FA380BFF1567ED37006A64C8 /* MainMenu.xib */,
 				FA380BF11567ED37006A64C8 /* Supporting Files */,
 			);
@@ -149,6 +179,17 @@
 				FA380BF91567ED37006A64C8 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA380C0D1567F013006A64C8 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FA380C121567F06F006A64C8 /* ANExecutable.h */,
+				FA380C131567F06F006A64C8 /* ANExecutable.m */,
+				FA380C0E1567F02B006A64C8 /* ANExecutableManager.h */,
+				FA380C0F1567F02B006A64C8 /* ANExecutableManager.m */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +287,10 @@
 			files = (
 				FA380BD91567ED10006A64C8 /* main.m in Sources */,
 				FA380BE01567ED10006A64C8 /* ANAppDelegate.m in Sources */,
+				FA380C081567EFA7006A64C8 /* ANLaunchListWindow.m in Sources */,
+				FA380C101567F02B006A64C8 /* ANExecutableManager.m in Sources */,
+				FA380C141567F06F006A64C8 /* ANExecutable.m in Sources */,
+				FA380C211567F4C1006A64C8 /* ANAutoLaunch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +300,9 @@
 			files = (
 				FA380BF71567ED37006A64C8 /* main.m in Sources */,
 				FA380BFE1567ED37006A64C8 /* ANAppDelegate.m in Sources */,
+				FA380C111567F02B006A64C8 /* ANExecutableManager.m in Sources */,
+				FA380C151567F06F006A64C8 /* ANExecutable.m in Sources */,
+				FA380C251567FB2F006A64C8 /* ANTerminal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +470,7 @@
 				FA380BE81567ED10006A64C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA380C021567ED37006A64C8 /* Build configuration list for PBXNativeTarget "LaunchListHelper" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +479,7 @@
 				FA380C041567ED37006A64C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

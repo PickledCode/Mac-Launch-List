@@ -10,10 +10,19 @@
 
 @implementation ANAppDelegate
 
-@synthesize window = _window;
-
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
+    NSSize windSize = NSMakeSize(500, 400);
+    NSSize screenSize = [[NSScreen mainScreen] frame].size;
+    NSRect frame = NSMakeRect((screenSize.width - windSize.width) / 2,
+                             (screenSize.height - windSize.height) / 2,
+                             windSize.width, windSize.height);
+    
+    window = [[ANLaunchListWindow alloc] initWithContentRect:frame
+                                                   styleMask:(NSTitledWindowMask | NSResizableWindowMask | NSMiniaturizableWindowMask)
+                                                     backing:NSBackingStoreBuffered
+                                                       defer:NO
+                                                      screen:[NSScreen mainScreen]];
+    [window makeKeyAndOrderFront:self];
 }
 
 @end

@@ -10,11 +10,16 @@
 
 @implementation ANAppDelegate
 
-@synthesize window = _window;
-
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    ANExecutableManager * manager = [ANExecutableManager sharedManager];
+    ANTerminal * term = [[ANTerminal alloc] init];
+    for (ANExecutable * exec in [manager executables]) {
+        if ([exec enabled]) {
+            [term runCommand:[exec command]];
+        }
+    }
+    [[NSApplication sharedApplication] terminate:self];
 }
 
 @end

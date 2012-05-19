@@ -1,5 +1,5 @@
 //
-//  ANAppDelegate.h
+//  ANTerminal.h
 //  Launch List
 //
 //  Created by Alex Nichol on 5/19/12.
@@ -7,10 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "ANLaunchListWindow.h"
+#import "Terminal.h"
 
-@interface ANAppDelegate : NSObject <NSApplicationDelegate> {
-    ANLaunchListWindow * window;
+@interface ANTerminal : NSObject {
+    TerminalApplication * application;
 }
+
+- (void)runCommand:(NSString *)script;
 
 @end
